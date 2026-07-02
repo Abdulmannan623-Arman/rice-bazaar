@@ -65,5 +65,12 @@
     --space-16: 4rem;     /* 64px */
     --space-20: 5rem;     /* 80px */
 
+    /* ===========
+     Layout
+    =========== */
+
+    --container-max-width: 1200px;
+    --container-padding: var(--space-4);
+
 }
 
