@@ -133,23 +133,20 @@
 
 @media (max-width: 48rem) {
 
+    .container {
+        padding-inline: var(--space-2);
+    }
+
+    .header__top {
+        gap: var(--space-8);
+    }
+
     .header__logo img {
-        height: 2.3rem;
+        height: 2.5rem;
     }
 
     .header__search {
-        justify-content: end;
-
-        border: none;
-    }
-
-    .header__search-input {
         display: none;
-    }
-
-    .header__search-button {
-        background: none;
-        color: var(--gray-800);
     }
 
     .icon {
