@@ -110,7 +110,7 @@
     overflow: hidden;
 }
 
-#search-input {
+.header__search-input {
     flex: 1;
     padding-inline: var(--space-3);
 
@@ -120,9 +120,33 @@
     outline: none;
 }
 
-.search-btn {
+.header__search-button {
     width: 3.5rem;
     flex-shrink: 0;
     background: var(--color-primary-dark);
     color: white;
+}
+
+/* ==========================
+   Mobile (768px)
+========================== */
+
+@media (max-width: 48rem) {
+
+    .header__search {
+        justify-content: end;
+
+        border: none;
+    }
+
+.header__search-input {
+    display: none;
+}
+
+.header__search-button {
+    background: none;
+    color: var(--gray-800);
+}
+
+
 }
