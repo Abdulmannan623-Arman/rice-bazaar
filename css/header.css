@@ -96,6 +96,10 @@
     flex-shrink: 0;
 }
 
+.mobile__search-icon {
+    visibility: hidden;
+}
+
 .header__search {
     flex: 1;
 
@@ -138,7 +142,8 @@
     }
 
     .header__top {
-        gap: var(--space-8);
+        justify-content: space-between;
+        gap: 0;
     }
 
     .header__logo img {
@@ -148,10 +153,14 @@
     .header__search {
         display: none;
     }
-
+/* 
     .icon {
         width: 1.2rem;
         height: 1.2rem;
+    } */
+
+    .mobile__search-icon {
+        visibility: visible;
     }
 
 }
