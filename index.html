@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,16 +13,24 @@
     <meta name="description"
         content="Buy premium quality rice online from Rice Bazaar. Fresh, authentic, and delivered straight to your doorstep.">
 
-    <meta name="keywords" content="Rice Bazaar, Basmati Rice, Miniket Rice, Atop Rice, Brown Rice, Buy Rice Online">
+    <meta name="keywords"
+        content="Rice Bazaar, Basmati Rice, Miniket Rice, Atop Rice, Brown Rice, Buy Rice Online">
 
     <meta name="author" content="Rice Bazaar">
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/logos/favicon_io/favicon-32x32.png" type="image/x-icon">
+    <link rel="icon"
+        href="assets/logos/favicon_io/favicon-32x32.png"
+        type="image/x-icon">
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
@@ -33,88 +42,130 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
+
+    <!-- ==========================
+         Header
+    =========================== -->
 
     <header class="header">
 
         <div class="container">
 
+            <!-- Header Top -->
+
             <div class="header__top">
 
-                <button class="header__button menu-btn" type="button" aria-label="Open menu">
+                <!-- Menu Button -->
 
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <button
+                    class="header__button header__menu-button"
+                    type="button"
+                    aria-label="Open menu">
+
+                    <svg class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+
                         <path
-                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                            d="M0 96C0 78.3 14.3 64 32 64h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zm0 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm448 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z" />
+
                     </svg>
 
                 </button>
 
-                <a href="index.html" class="header__logo">
+                <!-- Logo -->
 
-                    <img src="assets/logos/primary-logo.png" alt="Rice Bazaar">
+                <a href="index.html"
+                    class="header__logo">
+
+                    <img
+                        src="assets/logos/primary-logo.png"
+                        alt="Rice Bazaar">
 
                 </a>
 
-                <form class="header__search">
-
-                    <input type="search" class="header__search-input" placeholder="Search products..."
-                        aria-label="Search products">
-
-                    <button type="submit" class="header__button header__search-button">
-
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                        </svg>
-
-                    </button>
-
-                </form>
+                <!-- Header Actions -->
 
                 <div class="header__actions">
 
-                    <span class="header__action">
+                    <a href="pages/login.html"
+                        class="header__action"
+                        aria-label="Login">
 
-                        <svg class="icon mobile__search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512">
+
                             <path
-                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
-                        </svg>
+                                d="M399 384.2C376.9 345.8 335.4 320 288 320h-64c-47.4 0-88.9 25.8-111 64.2C148.2 423.3 199.2 448 256 448s107.8-24.7 143-63.8zM0 256C0 114.6 114.6 0 256 0s256 114.6 256 256-114.6 256-256 256S0 397.4 0 256zm256 16a72 72 0 100-144 72 72 0 000 144z" />
 
-                    </span>
-
-                    <a href="pages/login.html" class="header__action" aria-label="Login">
-
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                            <path
-                                d="M224 248a120 120 0 1 0 0-240 120 120 0 1 0 0 240zm-29.7 56C95.8 304 16 383.8 16 482.3 16 498.7 29.3 512 45.7 512l356.6 0c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3l-59.4 0z" />
                         </svg>
 
                     </a>
 
-                    <a href="pages/cart.html" class="header__action" aria-label="Shopping Cart">
+                    <a href="pages/cart.html"
+                        class="header__action"
+                        aria-label="Shopping Cart">
 
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                        <svg class="icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 640 512">
+
                             <path
-                                d="M0 8C0-5.3 10.7-16 24-16l45.3 0c27.1 0 50.3 19.4 55.1 46l.4 2 187.2 0 0 102.1-31-31c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c9.4 9.4 24.6 9.4 33.9 0l72-72c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-31 31 0-102.1 177.4 0c20 0 35.1 18.2 31.4 37.9L537.8 235.8c-5.7 30.3-32.1 52.2-62.9 52.2l-303.6 0 5.1 28.3c2.1 11.4 12 19.7 23.6 19.7L456 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-255.9 0c-34.8 0-64.6-24.9-70.8-59.1L77.2 38.6c-.7-3.8-4-6.6-7.9-6.6L24 32C10.7 32 0 21.3 0 8zM160 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm224 0a48 48 0 1 1 96 0 48 48 0 1 1 -96 0z" />
+                                d="M0 8C0-5.3 10.7-16 24-16h45.3c27.1 0 50.3 19.4 55.1 46l.4 2H312v102.1l-31-31c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l72 72c9.4 9.4 24.6 9.4 33.9 0l72-72c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-31 31V32h177.4c20 0 35.1 18.2 31.4 37.9l-31.1 165.9c-5.7 30.3-32.1 52.2-62.9 52.2H171.3l5.1 28.3c2.1 11.4 12 19.7 23.6 19.7H456c13.3 0 24 10.7 24 24s-10.7 24-24 24H200.1c-34.8 0-64.6-24.9-70.8-59.1L77.2 38.6c-.7-3.8-4-6.6-7.9-6.6H24C10.7 32 0 21.3 0 8zm160 456a48 48 0 1096 0 48 48 0 10-96 0zm224 0a48 48 0 1096 0 48 48 0 10-96 0z" />
+
                         </svg>
 
                     </a>
-
-
 
                 </div>
 
             </div>
 
+            <!-- Header Search -->
+
+            <form class="header__search">
+
+                <label
+                    for="header-search"
+                    class="visually-hidden">
+
+                    Search Products
+
+                </label>
+
+                <input
+                    id="header-search"
+                    class="header__search-input"
+                    type="search"
+                    placeholder="Search for rice, brand or category..."
+                    autocomplete="off">
+
+                <button
+                    class="header__button header__search-button"
+                    type="submit"
+                    aria-label="Search">
+
+                    <svg class="icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+
+                        <path
+                            d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208zM208 352a144 144 0 100-288 144 144 0 000 288z" />
+
+                    </svg>
+
+                </button>
+
+            </form>
 
         </div>
 
     </header>
-
-
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>

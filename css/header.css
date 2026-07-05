@@ -3,6 +3,8 @@
 ========================== */
 
 .header {
+    position: relative;
+
     background-color: var(--white);
     border-bottom: 1px solid var(--gray-200);
 }
@@ -14,13 +16,11 @@
 .header__top {
     display: flex;
     align-items: center;
-
-    gap: var(--space-4);
+    justify-content: space-between;
 
     min-height: 4rem;
 
-    color: var(--color-primary);
-
+    gap: var(--space-3);
 }
 
 /* ==========================
@@ -28,50 +28,24 @@
 ========================== */
 
 .header__logo {
-    flex-shrink: 0;
-
     display: inline-flex;
     align-items: center;
+
+    flex-shrink: 0;
 }
 
 .header__logo img {
     display: block;
 
-    height: 3rem;
+    height: 2.5rem;
     width: auto;
 }
 
 /* ==========================
-   Menu Button
+   Buttons
 ========================== */
 
-.header__button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 2.5rem;
-    height: 2.5rem;
-
-    color: var(--color-primary-dark);
-    background: none;
-    border: none;
-}
-
-
-/* ==========================
-   Header Actions
-========================== */
-
-.header__actions {
-    flex-shrink: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: var(--space-2);
-}
-
+.header__button,
 .header__action {
     display: inline-flex;
     align-items: center;
@@ -80,7 +54,31 @@
     width: 2.5rem;
     height: 2.5rem;
 
-    color: var(--gray-800);
+    border: none;
+    background: none;
+
+    color: var(--gray-900);
+
+    cursor: pointer;
+
+    flex-shrink: 0;
+}
+
+.menu-btn {
+    color: var(--color-primary-dark);
+}
+
+/* ==========================
+   Header Actions
+========================== */
+
+.header__actions {
+    display: flex;
+    align-items: center;
+
+    gap: var(--space-2);
+
+    flex-shrink: 0;
 }
 
 /* ==========================
@@ -96,71 +94,96 @@
     flex-shrink: 0;
 }
 
-.mobile__search-icon {
-    visibility: hidden;
-}
+/* ==========================
+   Search
+========================== */
 
 .header__search {
-    flex: 1;
+    position: absolute;
 
-    height: 2.5rem;
+    left: var(--space-4);
+    right: var(--space-4);
+    top: calc(100% + var(--space-2));
 
     display: flex;
     align-items: center;
 
+    height: 2.75rem;
+
     border: 1px solid var(--color-primary-dark);
     border-radius: 999px;
+
+    background-color: var(--white);
 
     overflow: hidden;
 }
 
 .header__search-input {
     flex: 1;
-    padding-inline: var(--space-3);
 
     min-width: 0;
 
+    padding-inline: var(--space-3);
+
     border: none;
     outline: none;
+    background: transparent;
+}
+
+.header__search-input::placeholder {
+    color: var(--gray-500);
 }
 
 .header__search-button {
     width: 3.5rem;
-    flex-shrink: 0;
-    background: var(--color-primary-dark);
-    color: white;
+    height: 100%;
+
+    background-color: var(--color-primary-dark);
+    color: var(--white);
 }
 
 /* ==========================
-   Mobile (768px)
+   Tablet
 ========================== */
+/* 
+@media (min-width: 48rem) {
 
-@media (max-width: 48rem) {
-
-    .container {
-        padding-inline: var(--space-2);
-    }
-
-    .header__top {
-        justify-content: space-between;
-        gap: 0;
+    .header {
+        padding-block: var(--space-2);
     }
 
     .header__logo img {
-        height: 2.5rem;
+        height: 3rem;
     }
 
     .header__search {
-        display: none;
+        position: static;
+
+        flex: 1;
+
+        margin-inline: var(--space-4);
+
+        height: 2.75rem;
     }
+
+} */
+
+/* ==========================
+   Desktop
+========================== */
 /* 
-    .icon {
-        width: 1.2rem;
-        height: 1.2rem;
-    } */
+@media (min-width: 64rem) {
 
-    .mobile__search-icon {
-        visibility: visible;
+    .header__top {
+        gap: var(--space-5);
     }
 
-}
+    .header__logo img {
+        height: 3.25rem;
+    }
+
+    .header__search {
+        max-width: 700px;
+    }
+
+} */
