@@ -52,3 +52,13 @@
 
     object-fit: cover;
 }
+
+@media (min-width: 64rem) {
+    .hero__slider {
+        width: 80%;
+        height: 470px;
+
+        margin: 0.5rem auto;
+    }
+    
+}
