@@ -53,12 +53,32 @@
     object-fit: cover;
 }
 
-@media (min-width: 64rem) {
+/* ==========================
+   Tablet
+========================== */
+
+@media (min-width: 48rem) {
     .hero__slider {
         width: 80%;
-        height: 470px;
+        height: 348px;
 
         margin: 0.5rem auto;
     }
     
 }
+
+
+/* ==========================
+   Desktop
+========================== */
+
+@media (min-width: 64rem) {
+    .hero__slider {
+        width: 80%;
+        height: 468px;
+
+        margin: 0.5rem auto;
+    }
+    
+}
+
