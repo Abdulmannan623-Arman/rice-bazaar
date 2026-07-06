@@ -1,0 +1,54 @@
+/* ==========================
+   Hero
+========================== */
+
+.hero {
+    margin-top: 5rem;
+}
+
+/* ==========================
+   Hero Slider
+========================== */
+
+.hero__slider {
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: var(--radius-xl);
+}
+
+/* ==========================
+   Hero Track
+========================== */
+
+.hero__track {
+    display: flex;
+
+    transition: transform 500ms ease;
+}
+
+/* ==========================
+   Hero Slide
+========================== */
+
+.hero__slide {
+    flex: 0 0 100%;
+}
+
+/* ==========================
+   Hero Image
+========================== */
+
+.hero__image {
+    display: block;
+}
+
+.hero__image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+}
