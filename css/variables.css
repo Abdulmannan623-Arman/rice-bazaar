@@ -72,5 +72,14 @@
     --container-max-width: 1200px;
     --container-padding: var(--space-4);
 
+    /* ===========
+     z-index
+    =========== */
+
+    --z-overlay: 900;
+    --z-drawer: 1000;
+    --z-modal: 1100;
+    --z-toast: 1200;
+
 }
 
