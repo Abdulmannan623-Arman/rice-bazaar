@@ -5,17 +5,23 @@
 const menuButton = document.querySelector(".header__menu-button");
 const closeButton = document.querySelector(".mobile-menu__close");
 const mobileMenu = document.querySelector(".mobile-menu");
+const overlay = document.querySelector(".overlay");
 
 // ==========================
 // Mobile Menu Functions
 // ==========================
 
+function toggleMobileMenu(isOpen) {
+    mobileMenu.classList.toggle("mobile-menu--open", isOpen);
+    overlay.classList.toggle("overlay--show", isOpen);
+}
+
 function openMobileMenu() {
-    mobileMenu.classList.add("mobile-menu--open");
+    toggleMobileMenu(true);
 }
 
 function closeMobileMenu() {
-    mobileMenu.classList.remove("mobile-menu--open");
+    toggleMobileMenu(false);
 }
 
 // ==========================
@@ -25,3 +31,5 @@ function closeMobileMenu() {
 menuButton.addEventListener("click", openMobileMenu);
 
 closeButton.addEventListener("click", closeMobileMenu);
+
+overlay.addEventListener("click", closeMobileMenu);
