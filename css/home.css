@@ -134,7 +134,7 @@
 ========================== */
 
 .category-card {
-    flex: 0 0 8rem;
+    flex: 0 0 5rem;
 
     display: flex;
     flex-direction: column;
@@ -154,8 +154,8 @@
 ========================== */
 
 .category-card__image {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
 
     border-radius: 50%;
 
@@ -192,5 +192,16 @@
     font-weight: var(--font-weight-semibold);
 
     color: var(--gray-900);
+}
+
+@media (min-width: 48rem) {
+    .category-card {
+        flex: 0 0 8rem;
+    }
+
+    .category-card__image {
+        width: 6rem;
+        height: 6rem;
+    }
 }
 
