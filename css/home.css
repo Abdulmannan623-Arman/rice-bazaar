@@ -205,3 +205,218 @@
     }
 }
 
+/* ==========================
+   Featured Products
+========================== */
+
+.featured-products {
+    padding-block: var(--space-2);
+}
+
+/* ==========================
+   Section Header
+========================== */
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: var(--space-5);
+}
+
+.section-title {
+    margin: 0;
+
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+
+    color: var(--gray-900);
+}
+
+.section-link {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+
+    color: var(--color-primary-dark);
+}
+
+/* ==========================
+   Products List
+========================== */
+
+.products-list {
+    display: flex;
+
+    gap: var(--space-2);
+
+    overflow-x: auto;
+
+    padding-bottom: var(--space-2);
+
+    scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+}
+
+.products-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* ==========================
+   Product Card
+========================== */
+
+.product-card {
+    flex: 0 0 11rem;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-color: var(--white);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 1rem;
+
+    scroll-snap-align: start;
+}
+
+/* ==========================
+   Product Link
+========================== */
+
+.product-card__link {
+    display: block;
+
+    color: inherit;
+}
+
+/* ==========================
+   Discount Badge
+========================== */
+
+.product-card__badge {
+    position: absolute;
+
+    top: var(--space-3);
+    left: var(--space-3);
+
+    padding: 0.2rem 0.5rem;
+
+    background-color: var(--color-primary-dark);
+
+    color: var(--white);
+
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+
+    border-radius: 999px;
+}
+
+/* ==========================
+   Product Image
+========================== */
+
+.product-card__image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+
+    padding: var(--space-4);
+}
+
+/* ==========================
+   Product Content
+========================== */
+
+.product-card__content {
+    padding: var(--space-3);
+}
+
+/* ==========================
+   Product Title
+========================== */
+
+.product-card__title {
+    margin-bottom: var(--space-2);
+
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+
+    color: var(--gray-900);
+
+    line-height: 1.4;
+}
+
+/* ==========================
+   Product Weight
+========================== */
+
+.product-card__weight {
+    margin-bottom: var(--space-3);
+
+    font-size: var(--font-size-sm);
+
+    color: var(--gray-500);
+}
+
+/* ==========================
+   Product Price
+========================== */
+
+.product-card__price {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+
+    flex-wrap: wrap;
+}
+
+.product-card__price-current {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+
+    color: var(--color-primary-dark);
+}
+
+.product-card__price-old {
+    font-size: var(--font-size-sm);
+
+    color: var(--gray-400);
+
+    text-decoration: line-through;
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (min-width: 48rem) {
+
+    .products-list {
+        gap: var(--space-4);
+    }
+
+    .product-card {
+        flex-basis: 13rem;
+    }
+
+}
+
+/* ==========================
+   Desktop
+========================== */
+
+@media (min-width: 64rem) {
+
+    .product-card {
+        flex-basis: 15rem;
+    }
+
+}
