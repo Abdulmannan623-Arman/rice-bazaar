@@ -438,3 +438,121 @@
 
 }
 
+/* ==========================
+   Features
+========================== */
+
+.features {
+    padding-block: var(--space-10);
+}
+
+/* ==========================
+   Features List
+========================== */
+
+.features__list {
+    display: grid;
+
+    gap: var(--space-4);
+}
+
+/* ==========================
+   Feature Card
+========================== */
+
+.feature-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: var(--space-5);
+
+    background-color: var(--white);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 1rem;
+
+    transition:
+        transform 250ms ease,
+        box-shadow 250ms ease;
+}
+
+/* ==========================
+   Feature Icon
+========================== */
+
+.feature-card__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    margin-bottom: var(--space-4);
+
+    font-size: 1.5rem;
+}
+
+/* ==========================
+   Feature Title
+========================== */
+
+.feature-card__title {
+    margin-bottom: var(--space-2);
+
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-bold);
+
+    color: var(--color-primary-dark);
+}
+
+/* ==========================
+   Feature Text
+========================== */
+
+.feature-card__text {
+    font-size: var(--font-size-sm);
+
+    color: var(--gray-600);
+
+    line-height: 1.7;
+}
+
+/* ==========================
+   Hover Effects
+========================== */
+
+@media (hover: hover) {
+
+    .feature-card:hover {
+        transform: translateY(-4px);
+
+        box-shadow: 0 12px 24px rgb(0 0 0 / 10%);
+    }
+
+}
+
+/* ==========================
+   Tablet
+========================== */
+
+@media (min-width: 48rem) {
+
+    .features__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* ==========================
+   Desktop
+========================== */
+
+@media (min-width: 64rem) {
+
+    .features__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
